@@ -32,9 +32,11 @@
                     <label class="label">
                       <span class="label-text">Account Number</span>
                     </label>
-                    <input type="email" placeholder="type your number"
-                    value="099992" 
-                    class="input input-bordered"/>
+                    <input type="number" placeholder="type your number"
+                    value="01234699992"
+                    id="Account-number" 
+                    class="input input-bordered"
+                    required/>
                   </div>
                   <div class="form-control">
                     <label class="label">
@@ -42,18 +44,21 @@
                     </label>
                     <input type="text" placeholder="type your pin" 
                     value="1234"
-                    class="input input-bordered" required />
+                    class="input input-bordered" 
+                    id="pin"
+                    required />
                     <label class="label">
                       <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                     </label>
                   </div>
                   <div class="form-control mt-6">
-                    <button class="btn btn-primary">Login</button>
+                    <button id="login-btn" class="btn btn-primary">Login</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
     </section>
+    <script src="script/login.js"></script>
   </body>
 </html>

@@ -55,7 +55,7 @@
               <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="" />
               <h3>get Bonus</h3>
             </div>
-            <div class="box border p-4 text-center rounded-sm">
+            <div id="transaction-box"  class="box border p-4 text-center rounded-sm cursor-pointer">
               <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="" />
               <h3>Transaction history</h3>
             </div>
@@ -79,7 +79,7 @@
                       <label class="fieldset-label">Acount number</label>
                       <input
                         value="01301301302"
-                        id="Acount-nunber"
+                        id="Account-number"
                         type="number"
                         maxlength="11"
                         class="input"
@@ -163,11 +163,19 @@
               </button>
             </fieldset>
           </section>
+          <!-- transaction history -->
+           <section id="transaction-history">
+            <h1 class="text-3xl font-bold text-red-400 text-center p-3">Transaction History</h1>
+            <div id="transaction-container">
+
+            </div>
+           </section>
         </section>
       </header>
     </section>
     <script src="script/addMoney.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transectionHistory.js"></script>
   </body>
 </html>
